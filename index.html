@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="navbar">
+        <h1>BookSky</h1>
+    </div>
+    <div class="container">
+        <div class="bookcontainer">
+            <h2>Richest Meow</h2>
+            <h4>harshu</h4><br>
+            <p>The richest cat in the world according to Guinness World Records is Blackie. When his millionaire owner passed away he refused to recognise his family in his will and instead gave his 7-million-pound fortune to Blackie! We can’t believe that interesting cat fact!</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup">
+        <h2>Add Book</h2>
+        <form>
+            <input  type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input"> 
+            <textarea placeholder="Short Description" id="book-description-input"></textarea><br>
+            <button id="add-book">Add</button>
+            <button id="cancel-book">Cancel</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
